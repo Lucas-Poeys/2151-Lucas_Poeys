@@ -1,0 +1,32 @@
+body {
+    background-image: linear-gradient(rgb(1, 1, 56), rgb(0, 89, 255), rgb(25, 0, 255), rgb(1, 1, 56));
+    background-attachment: fixed;
+}
+h1, .legenda {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(rgb(109, 178, 247), dodgerblue, rgb(109, 178, 247));
+    color: white;
+    width: 70%;
+    margin: 15px auto;
+    margin-bottom: 4px;
+    padding: 0.2em;
+    font-size: 1.5em;
+    border-radius: 0.2em;
+}
+img {
+    width: 100%;
+}
+
+.miniaturas, .principal, .legenda {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.imagem {
+    width: 16.66%;
+    float: left;
+}
+.legenda {
+    font-size: 1.0em;
+}

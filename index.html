@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria dos Vingadores</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <h1><output id="titulo">Título da 1º Imagem</output></h1>
+        <div class="miniaturas">
+            <div class="imagem">
+                <img src="img/capitao.jpg" alt="" onmouseover="trocar(this.src, 'Capitão América', 'Primeira Vingador')">
+            </div>
+            <div class="imagem">
+                <img src="img/gaviao.jpg" alt="" onmouseover="trocar(this.src, 'Gavião Arqueiro', 'Nunca erra o alvo')">
+            </div>
+            <div class="imagem">
+                <img src="img/homem_ferro.jpg" alt="" onmouseover="trocar(this.src, 'Homem de Ferro', 'Gênio, bilionário, playboy e filantropo')">
+            </div>
+            <div class="imagem">
+                <img src="img/hulk.jpg" alt="" onmouseover="trocar(this.src, 'Hulk', 'Esmaga tudo')">
+            </div>
+            <div class="imagem">
+                <img src="img/thor.jpg" alt="" onmouseover="trocar(this.src, 'Thor', 'Filho de Odin')">
+            </div>
+            <div class="imagem">
+                <img src="img/viuva.jpg" alt="" onmouseover="trocar(this.src, 'Viúva Negra', 'Espiã mais qualificada')">
+            </div>
+        </div>
+        <div class="principal">
+            <img src="img/capitao.jpg" alt="" id="imagem_principal">
+        </div>
+        <div class="legenda">
+            <strong>
+                <output id="legenda">Legenda da primeira imagem</output>
+            </strong> 
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -30,3 +30,10 @@ img {
 .legenda {
     font-size: 1.0em;
 }
+button {
+    display: block;
+    margin: auto auto 20px;
+    background-color: #226FFF;
+    color: white;
+    padding: 5px 8px;
+}

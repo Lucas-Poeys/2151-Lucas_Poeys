@@ -12,12 +12,12 @@ h1 {
 main {
     margin: 15px auto;
     background-color: #9EC1FF;
-    width: 600px;
+    width: 40%;
     padding: 0px 0px 30px;
     border-radius: 15px;
 }
 h2 {
-    margin: 0px 100px;
+    margin: 0px 20%;
     color: #225178;
 }
 a {

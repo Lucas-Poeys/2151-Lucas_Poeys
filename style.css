@@ -23,3 +23,9 @@ h2 {
 a {
     text-decoration-color: #225178;
 }
+h1 {
+    font-size: 200%;
+}
+h2 {
+    font-size: 180%;
+}

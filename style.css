@@ -8,24 +8,20 @@ h1 {
     text-align: center;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
+    font-size: 250%;
 }
 main {
     margin: 15px auto;
     background-color: #9EC1FF;
-    width: 65%;
+    width: 80%;
     padding: 0px 0px 30px;
     border-radius: 15px;
 }
 h2 {
     margin: 0px 20%;
     color: #225178;
+    font-size: 200%;
 }
 a {
     text-decoration-color: #225178;
-}
-h1 {
-    font-size: 200%;
-}
-h2 {
-    font-size: 180%;
 }

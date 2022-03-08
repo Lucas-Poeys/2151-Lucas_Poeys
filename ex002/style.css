@@ -1,0 +1,91 @@
+body {
+   font-family: 'Staatliches';
+   background-color: whitesmoke;
+   margin: 0em;
+   background-image: url(Img/Fundo.jpg);
+   background-size: 100% 100%;
+   background-attachment: fixed;
+}
+#pag {
+   width: 1000px;
+   margin: auto;
+   color: black;
+   background-color: rgb(173, 170, 166);
+}
+header {
+   background-color: rgb(71, 70, 70);
+   background-image: url(Img/Header.jpg);
+   background-size: 100% 100%;
+   color: rgb(255, 255, 255);
+   height: 13em;
+   max-width: 100%;
+   padding: 2em;
+   text-align: right;
+}
+header h3 {
+   font-size: 3em;
+}
+header p {
+   font-size: 2.5em;
+}
+nav {
+   background-image: linear-gradient(rgb(94, 89, 89),rgb(116, 110, 110),rgb(94, 89, 89));
+   color: black;
+   padding: 1em;
+   max-width: 100%;
+}
+section {
+   background-image: linear-gradient(rgb(116, 112, 112), rgb(138, 132, 132), rgb(116, 112, 112));
+   color: black;
+   padding: 1em;
+   max-width: 100%;
+   min-height: 55em;
+}
+footer {
+   background-image: linear-gradient(rgb(94, 89, 89),rgb(94, 89, 89), rgb(116, 110, 110), rgb(94, 89, 89), rgb(94, 89, 89));
+   color: black;
+   min-height: 3em;
+   max-height: 100%;
+   padding: 1em;
+}
+#popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   background-color: rgba(0, 0, 0, 0.562);
+}
+#fechar {
+   position: absolute;
+   right: 90px;
+   top: 20px;
+   color: white;
+   font-size: 35px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   cursor: pointer;
+}
+#quadro {
+   width: 20%;
+   margin: 15% auto;
+   text-align: center;
+   background-color: rgb(116, 112, 112);
+   padding: 15px;
+   border-radius: 15px;
+}
+#quadro a {
+   text-decoration: none;
+}
+#quadro a:hover {
+   text-decoration: underline;
+}
+#msg {
+   color: rgb(126, 38, 38);
+   display: none;
+}
+#button {
+   background-color: rgb(73, 69, 69);
+   color: white;
+   padding: 5px;
+   width: 75%;
+}

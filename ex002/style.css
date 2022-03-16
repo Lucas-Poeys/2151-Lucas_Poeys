@@ -1,0 +1,167 @@
+body {
+   font-family: 'Staatliches';
+   background-color: whitesmoke;
+   margin: 0em;
+   background-image: url(Img/Fundo.jpg);
+   background-size: 100% 100%;
+   background-attachment: fixed;
+}
+#pag {
+   width: 80%;
+   margin: auto;
+   color: black;
+   background-color: rgb(173, 170, 166);
+}
+header {
+   background-color: rgb(71, 70, 70);
+   background-image: url(Img/Header.jpg);
+   background-size: 100% 100%;
+   color: rgb(255, 255, 255);
+   height: 13em;
+   max-width: 100%;
+   padding: 2em;
+   text-align: right;
+}
+header h3 {
+   font-size: 3em;
+}
+header p {
+   font-size: 2.5em;
+   margin-top: 4em;
+}
+nav {
+   background-image: linear-gradient(rgb(94, 89, 89),rgb(116, 110, 110),rgb(94, 89, 89));
+   color: black;
+   padding: 1em;
+   max-width: 100%;
+   height: 3em;
+}
+section {
+   background-image: linear-gradient(rgb(116, 112, 112), rgb(138, 132, 132), rgb(116, 112, 112));
+   color: black;
+   padding: 1em;
+   max-width: 100%;
+   min-height: 55em;
+   text-align: center;
+}
+footer {
+   background-image: linear-gradient(rgb(94, 89, 89),rgb(94, 89, 89), rgb(116, 110, 110), rgb(94, 89, 89), rgb(94, 89, 89));
+   color: black;
+   min-height: 3em;
+   max-height: 100%;
+   padding: 1em;
+}
+#popup {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   background-color: rgba(0, 0, 0, 0.562);
+}
+#fechar {
+   position: absolute;
+   right: 90px;
+   top: 20px;
+   color: white;
+   font-size: 35px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   cursor: pointer;
+}
+#quadro {
+   width: 40%;
+   margin: 15% auto;
+   text-align: center;
+   background-color: rgb(116, 112, 112);
+   padding: 15px;
+   border-radius: 15px;
+}
+#quadro a {
+   text-decoration: none;
+}
+#quadro a:hover {
+   text-decoration: underline;
+}
+#msg {
+   color: rgb(126, 38, 38);
+   display: none;
+}
+#button {
+   background-color: rgb(73, 69, 69);
+   color: white;
+   padding: 5px;
+   width: 35%;
+}
+button {
+   display: block;
+   background-color: rgb(73, 69, 69);
+   color: white;
+   padding: 5px 8px;
+   margin-top: 250%;
+}
+.ip {
+   width: 60%;
+   margin: auto;
+   margin-left: -70px;
+   margin-right: -70px;
+   border-radius: 7px;
+   box-shadow: 2px 8px 28px -4px rgba(0,0,0,0.82);
+   cursor: pointer;  
+}
+.produt {
+   float: left;
+   text-align: center;
+}
+ul li {
+   float: left;
+   width: 15%;
+   text-align: center;
+   list-style: none;
+}
+ul li a:hover {
+   color: white;
+}
+ul li a:hover:visited {
+   color: white;
+}
+ul li a {
+   text-decoration: none;
+   color: black;
+}
+ul li a:visited {
+   color: black;
+}
+#prod a, #prod2 a {
+   color: rgb(19, 19, 100);
+   text-decoration: none;
+}
+#prod a:visited, #prod a:visited {
+   color: rgb(17, 17, 68);
+}
+#d {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   background-color: rgba(0, 0, 0, 0.562);
+   display: none;
+}
+#d img {
+   margin: 15% 30%;
+}
+
+#imgin {
+   float: left;
+   margin-left: 10%;
+}
+#imin p {
+   font-size: 300%;
+   margin-right: 10%;
+   background-color: rgba(255, 255, 255, 0.24);
+   height: 400px;
+}
+#prod2 {
+   margin-top: 30%;
+}
+   

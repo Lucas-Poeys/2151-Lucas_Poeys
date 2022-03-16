@@ -168,4 +168,15 @@ ul li a:visited {
 #prod3 {
    margin-top: 60%;
 }
+#diz {
+   margin: auto;
+   margin-top: 10%;
+   text-align: left;
+   width: 75%;
+   font-size: 20px;
+}
+footer p{
+   margin-left: 3%;
+   float: left;
+}
    

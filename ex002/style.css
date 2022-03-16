@@ -39,7 +39,7 @@ nav {
 section {
    background-image: linear-gradient(rgb(116, 112, 112), rgb(138, 132, 132), rgb(116, 112, 112));
    color: black;
-   padding: 1em;
+   padding: 2em;
    max-width: 100%;
    min-height: 55em;
    text-align: center;
@@ -131,11 +131,11 @@ ul li a {
 ul li a:visited {
    color: black;
 }
-#prod a, #prod2 a {
+#prod a, #prod2 a, #prod3 a {
    color: rgb(19, 19, 100);
    text-decoration: none;
 }
-#prod a:visited, #prod a:visited {
+#prod a:visited, #prod2 a:visited #prod3 a:visited {
    color: rgb(17, 17, 68);
 }
 #d {
@@ -148,7 +148,7 @@ ul li a:visited {
    display: none;
 }
 #d img {
-   margin: 15% 30%;
+   margin: 5% 31%;
 }
 
 #imgin {
@@ -160,8 +160,12 @@ ul li a:visited {
    margin-right: 10%;
    background-color: rgba(255, 255, 255, 0.24);
    height: 400px;
+   padding: 5px;
 }
 #prod2 {
    margin-top: 30%;
+}
+#prod3 {
+   margin-top: 60%;
 }
    

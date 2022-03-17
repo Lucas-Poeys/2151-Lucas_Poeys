@@ -48,7 +48,6 @@ footer {
    background-image: linear-gradient(rgb(94, 89, 89),rgb(94, 89, 89), rgb(116, 110, 110), rgb(94, 89, 89), rgb(94, 89, 89));
    color: black;
    min-height: 3em;
-   max-height: 100%;
    padding: 1em;
 }
 #popup {
@@ -155,7 +154,7 @@ ul li a:visited {
    float: left;
    margin-left: 10%;
 }
-#imin p {
+#pcmod {
    font-size: 300%;
    margin-right: 10%;
    background-color: rgba(255, 255, 255, 0.24);
@@ -178,5 +177,47 @@ ul li a:visited {
 footer p{
    margin-left: 3%;
    float: left;
+}
+#celmod {
+   font-size: 260%;
+   width: 40%;
+   margin-right: 10%;
+   background-color: rgba(255, 255, 255, 0.24);
+   height: 400px;
+   padding: 5px;
+   padding-right: 80px;
+   display: none;
+}
+@media screen and (max-width: 768px) {
+   #imgin {
+      margin-left: 3%;
+      position: absolute;
+   }
+   #pcmod {
+     display: none; 
+   }
+   #celmod {
+      position: absolute;
+      display: block;
+   }
+   #diz {
+      margin-top: 180%;
+   }
+   footer p {
+      margin-left: 2%;
+      font-size: 50%;
+   }
+   section h1 {
+      
+   }
+   nav ul {
+      display: none;
+   }
+   .produt {
+      float: none;
+   }
+   #prod2, #prod3 {
+      margin-top: auto;
+   }
 }
    

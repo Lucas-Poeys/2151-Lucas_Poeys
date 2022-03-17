@@ -24,8 +24,8 @@
             <li><a href="tenis.html">● Tenis ●</a></li>
             <li><a href="camisas.html">● Camisas ●</a></li>
             <li><a href="../index.html">● Voltar ao Índice ●</a></li>
-
          </ul>
+         <p onclick="document.getElementById('armen').style.display = 'block'"><strong>☰</strong></p>
       </nav>
       <section>
          <div id="imin">
@@ -43,24 +43,34 @@
          <p>Turma:2151</p>
          <p>Email: lucas.santanna.estudante@eteot.rio.br</p>
       </footer>
-   <div id="popup">
-      <div id="fechar" onclick="fechar('popup')"> X </div>
-      <div id="quadro">
-         <h2>Faça o login com sua conta</h2>
-         <form method="post" >
-            <label for="login">Login:</label>
-            <input type="text" name="login" id="login" placeholder="Login">
-            <br>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" placeholder="Senha" size="19">
-            <br>
-            <br>
-            <input type="button" value="Entrar" onclick="logar()" id="button">
-            <br>
-            <br>
+      <div id="armen" onclick="document.getElementById('armen').style.display = 'none'">
+         <div id="mencel">
+            <ul>
+               <li>Início</li>
+               <li>Tênis</li>
+               <li>Camisas</li>
+               <li>Voltar ao Índice</li>
+            </ul>
+         </div>
+      </div>
+      <div id="popup">
+         <div id="fechar" onclick="fechar('popup')"> X </div>
+         <div id="quadro">
+            <h2>Faça o login com sua conta</h2>
+            <form method="post" >
+               <label for="login">Login:</label>
+               <input type="text" name="login" id="login" placeholder="Login">
+               <br>
+               <label for="senha">Senha:</label>
+               <input type="password" name="senha" id="senha" placeholder="Senha" size="19">
+               <br>
+               <br>
+               <input type="button" value="Entrar" onclick="logar()" id="button">
+               <br>
+               <br>
             <p id="msg">Acesso negado, Usuário ou Senha inválido</p>
             Não possui login? <a href="#">Cadastre-se gratuitamente</a>
-         </form>
+            </form>
       </div>
    <script src="script.js"></script>
 </body>

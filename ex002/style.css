@@ -188,6 +188,35 @@ footer p{
    padding-right: 80px;
    display: none;
 }
+nav p {
+   cursor: pointer;
+   text-align: right;
+}
+nav p:hover {
+   color: white;
+}
+#armen {
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   display: none;
+}
+#mencel {
+   position: absolute;
+   background-color: grey;
+   text-align: center;
+   width: 9%;
+   padding: 5px;
+   margin-top: 24%;
+   margin-left: 78%;
+}
+#mencel ul li {
+   float: none;
+   margin-bottom: 12px;
+} 
+
 @media screen and (max-width: 768px) {
    #imgin {
       margin-left: 3%;
@@ -206,9 +235,6 @@ footer p{
    footer p {
       margin-left: 2%;
       font-size: 50%;
-   }
-   section h1 {
-      
    }
    nav ul {
       display: none;

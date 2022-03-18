@@ -68,7 +68,7 @@ footer {
    cursor: pointer;
 }
 #quadro {
-   width: 40%;
+   width: 20%;
    margin: 15% auto;
    text-align: center;
    background-color: rgb(116, 112, 112);
@@ -152,7 +152,7 @@ ul li a:visited {
 
 #imgin {
    float: left;
-   margin-left: 10%;
+   margin-left: 27%;
 }
 #pcmod {
    font-size: 300%;
@@ -191,6 +191,7 @@ footer p{
 nav p {
    cursor: pointer;
    text-align: right;
+   display: none;
 }
 nav p:hover {
    color: white;
@@ -205,12 +206,13 @@ nav p:hover {
 }
 #mencel {
    position: absolute;
-   background-color: grey;
+   background-image: linear-gradient(rgb(68, 67, 67), grey, rgb(68, 67, 67));
    text-align: center;
    width: 9%;
    padding: 5px;
    margin-top: 24%;
    margin-left: 78%;
+   box-shadow: 2px 8px 28px -4px rgba(0,0,0,0.82);
 }
 #mencel ul li {
    float: none;
@@ -219,7 +221,7 @@ nav p:hover {
 
 @media screen and (max-width: 768px) {
    #imgin {
-      margin-left: 3%;
+      margin-left: 40%;
       position: absolute;
    }
    #pcmod {
@@ -244,6 +246,27 @@ nav p:hover {
    }
    #prod2, #prod3 {
       margin-top: auto;
+   }
+   #mencel {
+      width: 100px;
+      margin-top: 73%;
+      margin-left: 64%;
+   }
+   #ig img {
+      width: 300px;
+      margin-top: 90px;
+      margin-left: 80px;
+   }
+   nav p {
+      display: block;
+   }
+   header {
+      background-size: 170% 100%;
+      background-position-x: center;
+      color: rgb(37, 36, 36)
+   }
+   #quadro {
+      width: 40%;
    }
 }
    

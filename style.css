@@ -2,20 +2,28 @@ body {
     background-image: linear-gradient(#3262D9,#6086FF, #535CFA, #393EF8);
     background-attachment: fixed;
 }
-h1 {
-    background-image: linear-gradient(#2093D9, #61B3FF, #2093D9);
-    color: white;
-    text-align: center;
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-    font-size: 250%;
+header {
+    margin: auto;
+    width: 80%;
+    background-color: blue;
+    margin-top: 0%;
+}
+nav {
+    margin: auto;
+    width: 80%;
+    background-color: rgb(28, 28, 168);
 }
 main {
-    margin: 15px auto;
+    margin: auto;
     background-color: #9EC1FF;
-    width: 95%;
-    padding: 0px 0px 30px;
-    border-radius: 15px;
+    width: 80%;
+    padding: 20px 0px 30px;
+    height: 800px;
+}
+footer {
+    margin: auto;
+    width: 80%;
+    background-color: rgb(3, 3, 83);
 }
 h2 {
     margin: 0px 15%;

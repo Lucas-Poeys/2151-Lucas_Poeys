@@ -5,6 +5,8 @@ body {
 header {
     margin: auto;
     width: 80%;
+    background-image: url(img/foto-destaque.jpg);
+    height: 600px;
     background-color: blue;
     margin-top: 0%;
 }
@@ -24,6 +26,10 @@ footer {
     margin: auto;
     width: 80%;
     background-color: rgb(3, 3, 83);
+}
+h1 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
     margin: 0px 15%;

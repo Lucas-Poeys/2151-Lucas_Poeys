@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="pag">
+        <header>Orçamento</header>
+        <hr>
+        <form method="post" name="orcamento" id="orcamento">
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="login">Login</label>
+                <input type="text" name="login" required>
+                <label for="senha1">Senha</label>
+                <input type="password" name="senha1" oninput="senha()" required>
+                <label for="senha2">Confirmar Senha</label>
+                <input type="password" name="senha2" oninput="senha()" required>
+                <p id="msg">* As senhas não conferem</p>
+            </fieldset>
+            <fieldset>
+                <legend>Dados de Pagamento</legend>
+                <label for="acesso">Tipo de Acesso</label>
+                <input type="radio" name="fisica" id="acesso" checked> 
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

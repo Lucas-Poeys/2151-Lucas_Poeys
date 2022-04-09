@@ -1,0 +1,144 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 1024px;
+    margin: 20px auto;
+}
+
+header{
+    background-color: #141437;
+    height: 3.5em;
+}
+
+.ilog{
+    float: left;
+    margin: 0.5em 0 0 100px;
+   padding-right: 420px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 1.2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+nav ul li a:hover{
+    color: #81addc;
+}
+
+nav a{
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    transition: color 0.5s ease;
+}
+
+.dest{
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.tx-dest h1{
+    font-size: 2.3em;
+    color: #141437;
+}
+
+.tx-dest p{
+    color: #000a25;
+    font-size: 1em;
+    line-height: 2;
+}
+
+.gal{
+    color: #141437;
+    padding: 0 100px 0 100px;
+    overflow: auto;
+}
+
+.gal-img{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.titgal{
+    color: #141437;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contgal {
+    color: #000a25;
+    font-size: 1em;
+}
+
+.sobre{
+    background-color: #141437;
+    background-image: url(img/foto-detalhe/detalhe.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 100px;
+    color: white;
+}
+
+.sobre h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.sobre p{
+    line-height: 1.5;
+    width: 70%;
+}
+
+.contat, .cadastro{
+    margin: 50px 0;
+}
+
+.contat address{
+    color:#000a25;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cadastro{
+    color:#000a25;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-style: normal;
+    text-align: center;
+    font-weight: bold;
+}
+
+.map iframe{
+    width: 100%;
+    height: 450px;
+}
+
+.rod{
+    background-color: #141437;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}

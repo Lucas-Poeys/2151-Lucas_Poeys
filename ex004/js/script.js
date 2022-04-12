@@ -26,14 +26,14 @@ function calculos(form) {
     apagar = total - desconto
 
     //saida
-    form.tot1.value = "R$" + tot1.toFixed(2);
-    form.tot2.value = "R$" + tot2.toFixed(2);
-    form.tot3.value = "R$" + tot3.toFixed(2);
-    form.tot4.value = "R$" + tot4.toFixed(2);
+    form.tot1.value = "R$" + tot1.toFixed(2).replace(".",",");
+    form.tot2.value = "R$" + tot2.toFixed(2).replace(".",",");
+    form.tot3.value = "R$" + tot3.toFixed(2).replace(".",",");
+    form.tot4.value = "R$" + tot4.toFixed(2).replace(".",",");
 
-    document.getElementById('total').value = total.toFixed(2)
-    document.getElementById('desconto').value = desconto.toFixed(2)
-    document.getElementById('apagar').value = apagar.toFixed(2)
+    document.getElementById('total').value = total.toFixed(2).replace(".",",")
+    document.getElementById('desconto').value = desconto.toFixed(2).replace(".",",")
+    document.getElementById('apagar').value = apagar.toFixed(2).replace(".",",")
 
 }
 function confirma(form){
@@ -117,9 +117,25 @@ function mascara_cnpj(obj) {
         obj.value += "-"
     }
 }
+function mascara_telefone(obj) {
+    if(obj.value.length == 0) {
+        obj.value += "("
+    }
+    if(obj.value.length == 3) {
+        obj.value += ")"
+    }
+    if(obj.value.length == 8) {
+        obj.value += "-"
+    }
+}
 function salto(campo, digito) {
     if(campo == "cpf") {
         if(digito.length > 13) {
+            document.orcamento.telefone.focus();
+        }
+    }
+    if(campo == "cnpj") {
+        if(digito.length > 17) {
             document.orcamento.telefone.focus();
         }
     }

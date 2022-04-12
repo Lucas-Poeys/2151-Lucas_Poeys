@@ -37,10 +37,10 @@
                 </div>
                 <div id="cnpj">
                     <label for="cnpj">CNPJ</label>
-                    <input type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" onkeypress="mascara_cnpj(this)" maxlength="18">
+                    <input type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" onkeypress="mascara_cnpj(this)" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)" maxlength="18">
                 </div>
                 <label for="telefone">Telefone</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxx-xxxx" required>
+                <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxx-xxxx" onkeypress="mascara_telefone(this)" maxlength="13" onkeydown="return somente_numero(event)" required>
                 <label for="pagamento">Forma de Pagamento</label>
                 <select name="pagamento" id="pagamento" required>
                     <option value="dinheiro">Dinheiro</option>

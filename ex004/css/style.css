@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#08A4D4,#09DED7, #08A4D4);
+    background-image: linear-gradient(#08A4D4,#0ebfcc, #08A4D4);
     color: #172428;
 } 
 header h1 {
@@ -54,9 +54,12 @@ legend {
     width: 50%;
 }
 #msg {
-    display: none;
+    color: rgb(192, 3, 44);
 }
 #orcamento input[type=submit] {
     background-image: linear-gradient(#026f7b, #148c99, #026f7b);
     color: white;
+}
+#msg, #cartao, #cnpj{
+    display: none;
 }

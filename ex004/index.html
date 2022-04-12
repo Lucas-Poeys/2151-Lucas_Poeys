@@ -11,30 +11,34 @@
     <section id="pag">
         <header><h1>Orçamento</h1></header>
         <hr>
-        <form method="post" name="orcamento" id="orcamento">
+        <form method="post" name="orcamento" id="orcamento" oninput="calculos(this)" onsubmit="return confirma(this)" novalidate action="envio.html">
             <fieldset>
                 <legend>Dados de Acesso</legend>
                 <label for="login">Login</label>
                 <input type="text" name="login" required>
                 <label for="senha1">Senha</label>
-                <input type="password" name="senha1" oninput="senha()" required>
+                <input type="password" name="senha1" oninput="senha()" required oninput="senha()">
                 <label for="senha2">Confirmar Senha</label>
-                <input type="password" name="senha2" oninput="senha()" required>
+                <input type="password" name="senha2" oninput="senha()" required oninput="senha()">
                 <p id="msg">* As senhas não conferem</p>
             </fieldset>
             <fieldset>
                 <legend>Dados de Pagamento</legend>
                 Tipo de Acesso
                 <br>
-                <input type="radio" name="acesso" id="fisica" checked> 
+                <input type="radio" name="acesso" id="fisica" checked onchange="pessoa('pf')"> 
                 <label for="fisica">Pessoa Física</label>
-                <input type="radio" name="acesso" id="juridica">
+                <input type="radio" name="acesso" id="juridica" onchange="pessoa('pj')">
                 <label for="juridica">Pessoa Jurídica</label>
                 <br>
-                <label for="cpf" id="labcpf">CPF</label>
-                <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
-                <label for="cpf" id="labcnpj">CNPJ</label>
-                <input type="text" name="cnpj" id="cnpj" placeholder="xx.xxx.xxx/xxxx-xx">
+                <div id="cpf">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" onkeypress="mascara_cpf(this)" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)" maxlength="14">
+                </div>
+                <div id="cnpj">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" onkeypress="mascara_cnpj(this)" maxlength="18">
+                </div>
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" id="telefone" placeholder="(xx)xxxx-xxxx" required>
                 <label for="pagamento">Forma de Pagamento</label>
@@ -43,7 +47,7 @@
                     <option value="cartao">Cartão</option>
                     <option value="cheque">Cheque</option>
                 </select>
-                <fieldset id="crt">
+                <fieldset id="cartao">
                     <legend>Cartão</legend>
                     <label for="titular">Nome do Titular</label>
                     <input type="text" id="titular" placeholder="José da Silva">
@@ -62,32 +66,32 @@
                     <tr>
                         <td>Web Cam</td>
                         <td>R$300,00</td>
-                        <td><input type="number" name="qnt1" min="0" max="20" value="1"></td>
+                        <td><input type="number" name="qnt1" min="0" max="20" value="0"></td>
                         <td><input type="text" name="tot1"></td>
                     </tr>
                     <tr>
                         <td>Placa de Vídeo</td>
                         <td>R$700,00</td>
-                        <td><input type="number" name="qnt2" min="0" max="20" value="1"></td>
+                        <td><input type="number" name="qnt2" min="0" max="20" value="0"></td>
                         <td><input type="text" name="tot2"></td>
                     </tr>
                     <tr>
                         <td>Placa Mãe</td>
                         <td>R$650,00</td>
-                        <td><input type="number" name="qnt3" min="0" max="20" value="1"></td>
+                        <td><input type="number" name="qnt3" min="0" max="20" value="0"></td>
                         <td><input type="text" name="tot3"></td>
                     </tr>
                     <tr>
                         <td>HD Externo</td>
                         <td>R$299,00</td>
-                        <td><input type="number" name="qnt2" min="0" max="20" value="1"></td>
-                        <td><input type="text" name="tot2"></td>
+                        <td><input type="number" name="qnt4" min="0" max="20" value="0"></td>
+                        <td><input type="text" name="tot4"></td>
                     </tr>
                     <tr>
                         <td colspan="4" align="right">
-                            <h3>Total ➔ R$0,00</h3>
-                            <h3>Desconto ➔ R$0,00</h3>
-                            <h3>Valor a pagar ➔ R$0,00</h3>
+                            <h3>Total ➔ R$ <output id="total">0,00</output></h3>
+                            <h3>Desconto ➔ R$<output id="desconto">0,00</output></h3>
+                            <h3>Valor a pagar ➔ R$<output id="apagar">0,00</output></h3>
                         </td>
                     </tr>
                 </table>
@@ -97,5 +101,6 @@
             </center>
         </form>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

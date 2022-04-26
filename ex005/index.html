@@ -11,8 +11,11 @@
     <title>Festas Ltda</title>
   </head>
   <body>
+      <div id="imagem">
+        <img id="foto">
+      </div>
       <section class="container" id="conteudo">
-        <h1>TEMA DA FESTA</h1>
+        <h1><output id="titulo">TEMA DA FESTA</output></h1>
         <form class="row g-3" name="form">
             <div class="col-md-6">
               <label for="nome" class="form-label">Nome</label>
@@ -32,11 +35,12 @@
               </div>
               <div class="col-md-6">
                 <label for="tema" class="form-label">Tema</label>
-                <select class="form-select" aria-label="Default select example" id="tema">
+                <select class="form-select" aria-label="Default select example" id="tema" onchange="trocaTema()">
                     <option selected>Selecione</option>
                     <option value="1">Super Mario Bros</option>
                     <option value="2">Princesa Sofia</option>
                     <option value="3">PJ Masks</option>
+                    <option value="4">Vasco</option>
                   </select>
             </div>
             <div class="col-12">

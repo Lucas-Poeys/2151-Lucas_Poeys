@@ -1,0 +1,45 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#conteudo, #dados-cartao, #dados-boleto, #dados-pix {
+    margin-top: 2%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50%;
+    margin-left: 10%;
+}
+#conteudo h1, #dados-cartao h1, #dados-boleto h1, #dados-pix h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+#cnpj {
+    display: none;
+}
+#preco {
+    margin-top: 3%;
+    font-family: "Arial black", sans-serif;
+    font-size: 1.8em;
+}
+#foto {
+    position: fixed;
+    margin-left: 65%;
+    margin-top: 30%;
+}
+#area-boleto, #area-pix {
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 20%;
+    padding-bottom: 10%;
+    width: 60%;
+}
+#area-boleto p, #area-pix p {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#dados-boleto, #dados-cartao, #dados-pix {
+    display: none;
+    margin-bottom: 10%;
+}

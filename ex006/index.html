@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--cabeça-->
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>LC Poey's</title>
+  </head>
+  <!--corpo-->
+  <body>
+      
+    <h1 style="text-align: center;">Faça o seu Pedido aqui</h1>
+
+    <hr style="background-color: rgb(197, 197, 197);">
+
+    <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm">
+
+            <div class="card" style="width: 15rem;">
+
+                <img class="card-img-top" src="img/big-mac.jpg" alt="Imagem de capa do card">
+
+                <div class="card-body">
+
+                    <select class="form-control" id="sanduiche" onchange="calcularPedido()">
+
+                        <option value="1">Big Mac - R$ 14,90</option>
+
+                        <option value="2"> Quarterão - R$ 13,90</option>
+
+                        <option value="3"> Mc Fish - R$ 12,90</option>
+
+                        <input type="number" class="form-control text-center" id="quantSanduiche" min="0" max="9" value="0" onchange="calcularPedido()">
+                    </select>
+
+                </div>
+
+              </div>
+
+          </div>
+          <div class="col-sm">
+
+            <div class="card" style="width: 15rem;">
+
+                <img class="card-img-top" src="img/coca-cola.jpg" alt="Imagem de capa do card">
+
+                <div class="card-body">
+
+                    <select class="form-control" id="bebida" onchange="calcularPedido()">
+
+                        <option value="1">Pequeno - R$ 5,90</option>
+
+                        <option value="2">Médio - R$ 6,90</option>
+
+                        <option value="3">Grande - R$ 7,90</option>
+
+                        <input type="number" class="form-control text-center" id="quantBebida" min="0" max="9" value="0" onchange="calcularPedido()">
+                    </select>
+
+                </div>
+
+              </div>
+
+          </div>
+          <div class="col-sm">
+
+            <div class="card" style="width: 15rem;">
+
+                <img class="card-img-top" src="img/batata-frita.jpg" alt="Imagem de capa do card">
+
+                <div class="card-body">
+
+                    <select class="form-control" id="batata" onchange="calcularPedido()">
+
+                        <option value="1">Pequeno - R$ 5,90</option>
+
+                        <option value="2">Médio - R$ 6,90</option>
+
+                        <option value="3">Grande - R$ 7,90</option>
+
+                        <input type="number" class="form-control text-center" id="quantBatata" min="0" max="9" value="0" onchange="calcularPedido()">
+                    </select>
+
+                </div>
+
+              </div>
+
+          </div>
+
+          <div class="col-sm">
+
+            <div class="card" style="width: 100%;">
+
+                <div class="card-body">
+
+                    <h5 class="card-title form-control btn-danger" style="text-align: center;" onclick="document.body.style.backgroundImage = 'url(img/obamamburger.jfif)'" ondblclick="document.body.style.backgroundImage = 'none'">Total Pedido</h5>
+
+                    <h3 class="text-center"> R$ <output id="total"> 0.00 </output></h3>
+
+                    <button type="button" class="btn form-control btn-primary" onclick="finalizar()">Finalizar</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="modal" tabindex="-1" role="dialog" id="fim">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"><output id="titmsg"></output></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5 class="text-center">
+                  <output id="msg"></output>
+              </h5>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

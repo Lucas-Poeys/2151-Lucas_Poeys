@@ -4,28 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índice de exercicios</title>
-    <link rel="shortcut icon" href="Icone.ico" type="image/x-icon">
+    <title>Índice de meu 2° ano</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/iconesiteflot.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Meu Índice de exercícios</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="">Início</a></li>
-            <li><a href="">Exercícios</a></li>
-            <li><a href="">Repositório</a></li>
-        </ul>
-    </nav>
     <main>
-        <a href="ex001/index.html"><h2>1°:Galeria dos Vingadores</h2></a>
-        <a href="ex002/index.html"><h2>2º:Site da Adidas</h2></a>
-        <a href="ex003/index.html"><h2>3º Play Games</h2></a>
-    </main>
-    <footer>
-        Rodapé
+      <div class="pos-f-t" id="menucell">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-transparent p-4">
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <hr>
+              <li><a href="exercicios.html">Exercícios</a></li>
+              <hr>
+              <li><a href="contato.html">Contato</a></li>
+          </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-transparent">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img src="images/logositeflot.png" alt="Logo FLOT">
+        </nav>
+      </div>
+        <header>
+            <img src="images/logositeflot.png" alt="Logo FLOT">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="exercicios.html">Exercícios</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Alterna navegação" id="botham">
+                <span class="navbar-toggler-icon" id="icoham"></span>
+            </nav>
+        </header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/slide1.jpg" alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide2.jpg" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide3.jpg" alt="Terceiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/slide4.jpg" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+          <section class="destaque" id="destaque">
+            <article class="texto-destaque">
+                <h1>Índice de meu segundo ano</h1>
+                <br>
+                <p>
+                  Bem vindo ao meu índice! Aqui você irá encontrar os sites que desenvolvi em meu segundo ano do ensino médio.
+                </p>
+            </article>
+        </section>
+        <div class="mapa">
+            <h1>Veja onde Desenvolvi</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.3910301049636!2d-43.37927308503522!3d-22.86200918503464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99625a95ac53e1%3A0x621632cf9702a08!2sEscola%20T%C3%A9cnica%20Estadual%20Oscar%20Ten%C3%B3rio%20-%20ETEOT%2FFAETEC!5e0!3m2!1spt-BR!2sbr!4v1650334812631!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+    <footer class="rodape">
+      <p>Copyright © lucas-poeys.github.io/2151-Lucas_Poeys</p>
+      <p>Desenvolvido por: Lucas Poeys Carpenter de Sant'Anna</p>
+
     </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

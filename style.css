@@ -1,52 +1,319 @@
-body {
-    background-image: linear-gradient(#3262D9,#6086FF, #535CFA, #393EF8);
-    background-attachment: fixed;
-}
-header {
-    margin: auto;
-    width: 80%;
-    background-image: url(img/foto-destaque.jpg);
-    height: 600px;
-    background-color: blue;
-}
-nav {
-    margin: auto;
-    width: 77.7%;
-    background-color: rgb(28, 28, 168);
-    padding: 1em;
-    height: 3em;
-}
-main {
-    margin: auto;
-    background-color: #9EC1FF;
-    width: 80%;
-    padding: 20px 0px 30px;
-    height: 800px;
-}
-footer {
-    margin: auto;
-    width: 80%;
-    background-color: rgb(3, 3, 83);
-}
-h1 {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-h2 {
-    margin: 0px 15%;
-    color: #225178;
-    font-size: 200%;
-}
-a {
-    text-decoration-color: #225178;
-}
-ul li {
+*{
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d6d6d6;
+  }
+  main {
+    width: 1024px;
+    background-color: white;
+  }
+  header{
+    margin-top: -15px;
+    background-color: #0077b6;
+    height: 3.5em;
+  }
+  header img {
+    float: left;
+    margin: 0.5em 0 0 100px;
+    padding-right: 420px;
+  }
+  #menucell {
+    display: none;
+    background-color: #0077b6;
+  }
+  
+  nav ul li{
+    float: left;
     list-style: none;
     text-align: center;
-}
-ul li a {
-    float: left;
+    padding: 1.2em;
+  }
+  
+  nav ul li a{
     text-decoration: none;
+    text-transform: uppercase;
     color: white;
-    width: 15%;
-}
+    font-weight: bold;
+    display: block;
+  }
+  
+  nav ul li a:hover{
+  text-decoration: none;
+  color: #caf0f8;
+  }
+  
+  nav a{
+  font-size: 0.8em;
+  letter-spacing: 5px;
+  transition: color 0.5s ease;
+  } 
+  #menucell ul li{
+    list-style: none;
+    padding: 1.2em;
+  }
+  #menucell ul hr {
+    background-color: white;
+  }
+  #menucell ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
+  
+  #menucell ul li a:hover{
+  text-decoration: none;
+  color: #caf0f8;
+  }
+  
+  #menucell a{
+  font-size: 1em;
+  letter-spacing: 5px;
+  line-height: 0.2;
+  transition: color 0.5s ease;
+  } 
+  .destaque{
+    text-align: center;
+    padding: 50px 100px;
+  }
+  
+  .texto-destaque h1{
+    font-size: 2.3em;
+    color: #0077b6;
+  }
+  
+  .texto-destaque p{
+    color: #1f2022;
+    font-size: 1.2em;
+    line-height: 2;
+  }
+  #conteudo-sobre {
+    padding: 0;
+    margin: auto;
+    width: 824px;
+  }
+  #conteudo-sobre {
+    text-align: center;
+    color: #1f2022;
+    font-size: 1.2em;
+    line-height: 2;
+  }
+  .tipo1 {
+    color: white;
+    background-color: #0077b6;
+    width: 100%;
+    height: 306px;
+  }
+  .tipo1 img {
+    float: left;
+    border-color: black;
+    border-right-style: groove;
+    border-width: 3px;
+  }
+  .tipo1 h2 {
+    padding-top: 20px;
+    font-size: 1.6em;
+  }
+  .tipo1 p {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 5px;
+    font-size: 0.9em;
+  }
+  .tipo2 {
+    color: white;
+    background-color: #0077b6;
+    width: 100%;
+    height: 306px;
+  }
+  .tipo2 img {
+    float: right;
+    border-color: black;
+    border-left-style: groove;
+    border-width: 3px;
+  }
+  .tipo2 h2 {
+    padding-top: 20px;
+    font-size: 1.6em;
+  }
+  .tipo2 p {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 5px;
+    font-size: 0.9em;
+  }
+  .tipo1, .tipo2 {
+    border-color: black;
+    border-style: groove;
+    border-width: 3px
+  }
+  #font {
+    font-size: 0.7em;
+    padding-top: 50px;
+    padding-right: 450px;
+  }
+  #font2 {
+    font-size: 0.7em;
+    padding-top: 50px;
+    padding-right: 800px;
+  }
+  .galeria{
+    color: #0077b6;
+    padding: 0 100px 0 100px;
+    overflow: auto;
+  }
+  
+  .galeria-imagem{
+    width: 33.3%;
+    float: left;
+    text-align: center;
+  }
+  
+  .galeria-titulo{
+    color: #0077b6;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .galeria-conteudo{
+    color: #1f2022;
+    font-size: 1em;
+  }
+  .mapa h1 {
+    margin-top: 40px;
+    text-align: center;
+    color: #0077b6;
+    text-decoration: underline;
+  }
+  .mapa iframe{
+    margin-top: 20px;
+    width: 100%;
+    height: 450px;
+  }
+  .rodape{
+    background-color: #0077b6;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+  }
+  .rodape a {
+    color: white;
+    text-decoration: none;
+  }
+  .rodape a:visited {
+    text-decoration: none;
+  }
+  .rodape a:hover {
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 768px) {
+    main {
+      width: calc(100vw - 30px);
+    }
+    #menucell {
+      display: block;
+    }
+    nav {
+      display: none;
+    }
+    header {
+      display: none;
+    }
+    .destaque {
+      padding: 50px 30px;
+    }
+    #conteudo-sobre {
+      width: calc(100vw - 30px);
+    }
+    .tipo1, .tipo2 {
+      width: 306px;
+      min-height: 600px;
+      margin: auto;
+    }
+    .tipo1 img, .tipo2 img {
+      float: none;
+      border-left-style: none;
+      border-right-style: none;
+      border-bottom-style: groove;
+  
+    }
+    #font, #font2 {
+      padding-top: 10px;
+      padding-right: 280px;
+    }
+    .texto-destaque h1 {
+      font-size: 1.8em;
+    }
+    .texto-destaque p {
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+    .galeria {
+      width: calc(100vw - 30px);
+      padding: 0%;
+    }
+    .galeria-imagem {
+      float: none;
+      width: 100%;
+    }
+    .galeria-titulo {
+      text-align: center;
+    }
+    .galeria-conteudo {
+      text-align: center;
+    }
+  
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    main {
+      width: calc(50vw - 30px);
+    }
+    #menucell {
+      display: block;
+    }
+    nav {
+      display: none;
+    }
+    header {
+      display: none;
+    }
+    .destaque {
+      padding: 50px 30px;
+    }
+    .texto-destaque h1 {
+      font-size: 2em;
+    }
+    .texto-destaque p {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    .galeria {
+      width: calc(50vw - 30px);
+      padding: 0%;
+    }
+    .galeria-imagem {
+      float: none;
+      width: 100%;
+    }
+    .galeria-titulo {
+      text-align: center;
+    }
+    .galeria-conteudo {
+      text-align: center;
+    }
+  }
+  
